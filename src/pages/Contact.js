@@ -17,6 +17,7 @@ function Contact(){
   const [error, setError] = useState(false);
   const [message, setMessage] = useState("");
 
+
   const submitHandler = (event) =>{
     event.preventDefault();
     if( !formdata.name ){
@@ -33,7 +34,24 @@ function Contact(){
       setMessage('Message is required');
     } else{
       setError(false);
-      setMessage('You message has been sent!!!');
+      setMessage('You message has been sent!');
+      const form = event.target;
+      const data = new FormData(form);
+      const xhr = new XMLHttpRequest();
+      xhr.open(form.method, form.action);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = () => {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          form.reset();
+          setError(false);
+          setMessage('You message has been sent!');
+        } else {
+          setError(true);
+          setMessage("There's been an error!");
+        }
+      };
+      xhr.send(data);
     }
   }
   const handleChange = (event) => {
@@ -83,14 +101,14 @@ function Contact(){
             <div className="col-lg-6">
               <div className="mi-contact-formwrapper">
                 <h4>Get In Touch</h4>
-                <form action="#" className="mi-form mi-contact-form" onSubmit={submitHandler}>
+                <form action="https://formspree.io/xzbeqbjq" method="POST" className="mi-form mi-contact-form" onSubmit={submitHandler}>
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-name">Enter your name*</label>
                     <input onChange={handleChange} type="text" name="name" id="contact-form-name" value={formdata.name}/>
                   </div>
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-email">Enter your email*</label>
-                    <input onChange={handleChange} type="text" name="email" id="contact-form-email" value={formdata.email}/>
+                    <input onChange={handleChange} type="email" name="email" id="contact-form-email" value={formdata.email}/>
                   </div>
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-subject">Enter your subject*</label>
@@ -101,7 +119,9 @@ function Contact(){
                     <textarea onChange={handleChange} name="message" id="contact-form-message" cols="30" rows="6" value={formdata.message}></textarea>
                   </div>
                   <div className="mi-form-field">
-                    <button className="mi-button" type="submit">Send Mail</button>
+                    {/* {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+                    {status === "ERROR" && <p>Ooops! There was an error.</p>} */}
+                    <button className="mi-button" type="submit" value="Send">Send Mail</button>
                   </div>
                 </form>
                 {handleAlerts()}

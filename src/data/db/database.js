@@ -40,7 +40,7 @@ const database = {
     {
       title: "Cooperative Experience",
       icon: 'handshake',
-      details: "Has worked on major projects in teams, planning and coordinationg with several people at once to develop entire applications."
+      details: "Has worked on major projects in teams, planning and coordinating with several people at once to develop entire applications."
     }
   ],
   reviews: [
@@ -49,25 +49,25 @@ const database = {
       content: "Patrick was focused on success throughout the course, coming early to each class and dedicating time and energy into the homework and group projects.  Clearly, he loves to code and will tenaciously attack any challenge.",
       author: {
         name: 'Mark Carlson',
-        designation: 'Dead Developer, Takeoff Technologies'
-      }
-    },
-    {
-      id: 2,
-      content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam.",
-      author: {
-        name: 'Susan Yost',
-        designation: 'Client'
-      }
-    },
-    {
-      id: 3,
-      content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-      author: {
-        name: 'Irving Feeney',
-        designation: 'Fiverr Client'
-      }
+        designation: 'Lead Developer, Takeoff Technologies'
+      },
     }
+    // {
+    //   id: 2,
+    //   content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam.",
+    //   author: {
+    //     name: 'Susan Yost',
+    //     designation: 'Client'
+    //   }
+    // },
+    // {
+    //   id: 3,
+    //   content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    //   author: {
+    //     name: 'Irving Feeney',
+    //     designation: 'Fiverr Client'
+    //   }
+    // }
   ],
   skills: [
     {
@@ -98,121 +98,126 @@ const database = {
   portfolios: [
     {
       id: 1,
-      title: "T-shirt Mockup",
-      subtitle: "A beautiful t-shirt mockup.",
+      title: "Guessing Game",
+      subtitle: "HTML, CSS, Javastript",
       imageUrl: "/images/portfolio-image-1.jpg",
-      largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
-      url: 'https://dribbble.com'
+      // largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
+      url: 'https://patrickfinnigan.github.io/guessinggame/'
     },
     {
       id: 2,
-      title: "Coffee Mug",
-      subtitle: "Awesome coffee mug design.",
-      imageUrl: "/images/portfolio-image-4.jpg",
-      largeImageUrl: [
-        "/images/portfolio-image-4-lg.jpg",
-        "/images/portfolio-image-4-lg2.jpg"
-      ],
-      url: 'https://facebook.com'
-    },
-    {
-      id: 3,
-      title: "Tea & Coffee Mug",
-      subtitle: "Beautiful mug with logo.",
+      title: "Gem Mining",
+      subtitle: "HTML, CSS, JavaScript, jQuery",
       imageUrl: "/images/portfolio-image-2.jpg",
+      // largeImageUrl: ["/images/portfolio-image-2-lg.jpg"],
       url: 'https://pinterest.com'
     },
     {
-      id: 4,
-      title: "Pen Holder",
-      subtitle: "A pen holder with beautiful design.",
+      id: 3,
+      title: "Trivia Game",
+      subtitle: "HTML, jQuery, Timers",
       imageUrl: "/images/portfolio-image-3.jpg",
-      largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
-      url: '#'
+      // largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
+      url: 'https://patrickfinnigan.github.io/trivia_game/'
+    },
+    {
+      id: 4,
+      title: "Gif Generator",
+      subtitle: "API, JSON, Ajax",
+      imageUrl: "/images/portfolio-image-4.jpg",
+      // largeImageUrl: [
+      //   "/images/portfolio-image-4-lg.jpg",
+      //   "/images/portfolio-image-4-lg2.jpg"
+      // ],
+      url: 'https://patrickfinnigan.github.io/gifgenerator/'
     },
     {
       id: 5,
-      title: "Mug",
-      subtitle: "Mug with awesome style",
+      title: "Firebase Train Scheduler",
+      subtitle: "Firebase, HTML, JavaScript",
       imageUrl: "/images/portfolio-image-5.jpg",
-      largeImageUrl: ["/images/portfolio-image-5-lg.jpg"]
+      // largeImageUrl: ["/images/portfolio-image-5-lg.jpg"],
+      url: 'https://patrickfinnigan.github.io/trainschedule/'
     },
     {
       id: 6,
-      title: "Pendrive",
-      subtitle: "Free pendrive mockup design.",
+      title: "Burger Time",
+      subtitle: "Mongo, Express, Node",
       imageUrl: "/images/portfolio-image-6.jpg",
-      largeImageUrl: ["/images/portfolio-image-6-lg.jpg"]
+      // largeImageUrl: ["/images/portfolio-image-6-lg.jpg"],
+      url: 'https://damp-mountain-93742.herokuapp.com/burgers'
     },
     {
       id: 7,
-      title: "Beautiful Pendrive",
-      subtitle: "Pendrive with great design & flexible.",
+      title: "React Shuffle",
+      subtitle: "React",
       imageUrl: "/images/portfolio-image-7.jpg",
-      largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: 'https://twitter.com'
+      // largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
+      url: 'https://react-gameucbextension2018.herokuapp.com/'
     },
     {
       id: 8,
-      title: "Sticker",
-      subtitle: "Clip sticker mockup design.",
+      title: "NYT Article Scraper",
+      subtitle: "React, Mongoose, Cheerio",
       imageUrl: "/images/portfolio-image-8.jpg",
-      largeImageUrl: ["/images/portfolio-image-8-lg.jpg"]
+      // largeImageUrl: ["/images/portfolio-image-8-lg.jpg"],
+      url: 'https://young-river-49658.herokuapp.com/'
     },
     {
       id: 9,
-      title: "Packet",
-      subtitle: "Beautiful packet & product design.",
+      title: "Demoquest",
+      subtitle: "Mongoose, Express, React, Node",
       imageUrl: "/images/portfolio-image-9.jpg",
-      largeImageUrl: ["/images/portfolio-image-9-lg.jpg"]
+      // largeImageUrl: ["/images/portfolio-image-9-lg.jpg"],
+      url: 'https://demoquest.herokuapp.com/'
     }
   ],
   experience: {
     workingExperience: [
       {
         id: 1,
-        year: "2018 - Present",
+        year: "2019 - Present",
         position: "Frontend Web Developer",
-        company: "Abc Company",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        company: "Private Company (Currently under NDA)",
+        details: "Developing and designing the front-end layout of the company website, utilizing React tools to edit the website to meet company expectations."
       },
-      {
-        id: 2,
-        year: "2016 - 2018",
-        position: "Frontend Web Developer",
-        company: "CBA Company",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
-      },
-      {
-        id: 3,
-        year: "2014 - 1016",
-        position: "UI/UX Designer",
-        company: "Example Company",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
-      }
+      // {
+      //   id: 2,
+      //   year: "2016 - 2018",
+      //   position: "Frontend Web Developer",
+      //   company: "CBA Company",
+      //   details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+      // },
+      // {
+      //   id: 3,
+      //   year: "2014 - 1016",
+      //   position: "UI/UX Designer",
+      //   company: "Example Company",
+      //   details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+      // }
     ],
     educationExperience: [
       {
         id: 1,
-        year: "2018 - 2019",
-        graduation: "Master of Science",
-        university: "Abc University",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        year: "Sept 2012 - July 2016",
+        graduation: "Bachelor of Arts in Psychology",
+        university: "Sonoma State University",
+        details: "Studied clinical and social psychology, and developed an understanding of aesthetic design that can be used in web development"
       },
       {
         id: 2,
-        year: "2016 - 2018",
-        graduation: "Bachelor of Science",
-        university: "Abc University",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        year: "May 2018 - Nov 2018",
+        graduation: "Certification in Web Development",
+        university: "UC Berkeley Extension Program Coding Bootcamp",
+        details: "Learned the fundamentals of computer science and web design, learning how to develop fullstack MERN applications."
       },
-      {
-        id: 3,
-        year: "2015 - 2016",
-        graduation: "Higher Schoold Graduation",
-        university: "Abc College",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
-      }
+      // {
+      //   id: 3,
+      //   year: "2015 - 2016",
+      //   graduation: "Higher Schoold Graduation",
+      //   university: "Abc College",
+      //   details: "Lorem Ipsum"
+      // }
     ]
   },
   blogs: [

@@ -72,27 +72,27 @@ const database = {
   skills: [
     {
       title: "HTML5",
-      value: 95
+      value: 70
     },
     {
       title: "CSS3",
-      value: 90
+      value: 65
     },
     {
       title: "Javascript",
-      value: 75
+      value: 55
     },
     {
       title: "jQuery",
-      value: 70
+      value: 50
     },
     {
       title: "ReactJS",
-      value: 70
+      value: 50
     },
     {
       title: "Bootstrap",
-      value: 80
+      value: 65
     }
   ],
   portfolios: [
@@ -178,7 +178,7 @@ const database = {
         id: 1,
         year: "2019 - Present",
         position: "Frontend Web Developer",
-        company: "Private Company (Currently under NDA)",
+        company: "Socicraft (Currently under NDA)",
         details: "Developing and designing the front-end layout of the company website, utilizing React tools to edit the website to meet company expectations."
       },
       // {

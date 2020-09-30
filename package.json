@@ -52,6 +52,10 @@
   "bugs": {
     "url": "https://github.com/patrickfinnigan/portfolio2020/issues"
   },
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.14.5"
+  },
   "homepage": "./",
   "devDependencies": {}
 }

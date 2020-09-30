@@ -52,6 +52,6 @@
   "bugs": {
     "url": "https://github.com/patrickfinnigan/portfolio2020/issues"
   },
-  "homepage": "https://github.com/patrickfinnigan/portfolio2020#readme",
+  "homepage": "./",
   "devDependencies": {}
 }

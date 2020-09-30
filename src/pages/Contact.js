@@ -22,19 +22,21 @@ function Contact(){
     event.preventDefault();
     if( !formdata.name ){
       setError(true);
-      setMessage('Name is required');
+      alert('Please enter your name');
     } else if( !formdata.email ){
       setError(true);
-      setMessage('Email is required');
+      alert('Please include an email address');
     } else if( !formdata.subject ){
       setError(true);
-      setMessage('Subject is required');
+      alert('Please give your message a subject title');
     } else if( !formdata.message ){
       setError(true);
-      setMessage('Message is required');
+      alert('Please include a message in your submission');
+      // setMessage('Please include a message in your submission');
     } else{
       setError(false);
-      setMessage('You message has been sent!');
+      alert('You message has been sent!');
+      // setMessage('You message has been sent!');
       const form = event.target;
       const data = new FormData(form);
       const xhr = new XMLHttpRequest();
@@ -44,6 +46,7 @@ function Contact(){
         if (xhr.readyState !== XMLHttpRequest.DONE) return;
         if (xhr.status === 200) {
           form.reset();
+          window.location.reload();
           setError(false);
           setMessage('You message has been sent!');
         } else {
